@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Кошачий опрос</title>
+</head>
+<body>
+<form>
+
+    <fieldset>
+        <legend>Данные владельца</legend>
+        <label for="human-name"></label>
+        <input type="text" id="human-name" placeholder="имя владельца" tabindex="1"/><br>
+        <label for="human-last-name"></label>
+        <input type="text" id="human-last-name" placeholder="фамилия владельца" tabindex="1"/><br>
+        <label for="phone"></label>
+        <input type="tel" id="phone" placeholder="номер телефона" tabindex="1"/>
+
+    </fieldset>
+    <fieldset>
+        <legend>Данные питомца</legend>
+        <label for="pet-name">Имя питомца</label><br>
+        <input type="text" name="кличка" id="pet-name" placeholder="кличка питомца" tabindex="1"/><br>
+        <div>
+            <h3>Выберите пол</h3>
+            <label for="f">самка</label>
+            <input type="radio" name="gender" id="f">
+            <label for="m">самец</label>
+            <input type="radio" name="gender" id="m"><br></div>
+        <div>
+            <h3>Порода</h3>
+            <label for="poroda"></label>
+            <select id="poroda">
+                <option value="0" disabled selected>выберите породу из списка</option>
+                <option value="1">метис</option>
+                <option value="2">сфинкс</option>
+                <option value="3">сиамская</option>
+                <option value="4">персидская</option>
+                <option value="5">шотландская</option>
+            </select></div>
+        <div>
+            <h3>Чем питается:</h3>
+
+            <input type="checkbox" id="dry-food"/>
+            <label for="dry-food">сухой корм</label><br>
+            <input type="checkbox" id="wet-food"/>
+            <label for="wet-food">влажный корм</label>
+            <br>
+            <input type="checkbox" id="natural-food"/>
+            <label for="natural-food">натуралка</label>
+            <br></div>
+        <div><label for="comments">Если вам есть что добавить</label><br>
+            <textarea name="comments" id="comments" rows="5" cols="20"
+                      placeholder="здесь можно написать комментарий"></textarea></div>
+        <label for="photo">загрузите фото</label> <input type="file" id="photo"/>
+    </fieldset>
+    <button type="submit">сохранить</button>
+</form>
+
+</body>
+</html>
