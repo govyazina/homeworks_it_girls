@@ -1,0 +1,264 @@
+/*global styles*/
+
+body {
+    font-family: 'Gilroy', Helvetica, sans-serif;
+    margin-left: 6.41vw;
+    margin-right: 6.41vw;
+}
+
+body { background-image: url("../img/bg/BG_orange1.svg"), url("../img/bg/BG_orange2.svg"), url("../img/bg/bg_photo_light_yellow.png"), url("../img/bg/BG_orange+yellow.svg");
+    background-position: top right, left top 1000px, top 2500px center, top 4921px center;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 900;
+}
+.bold {
+    font-weight: bolder;
+}
+
+
+.black_link {
+    color: black;
+}
+.orange_link {
+    color: #F9B300;
+}
+.button_orange {
+    display: block;
+    box-sizing: border-box;
+    background-color: #F9B300;
+    color: white; text-decoration: none;
+    padding: 10px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+/*header*/
+
+
+  .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+  }
+
+  .logo {
+margin: 22px 15.13vw 0 0;
+
+  }
+  nav {
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      /*width: 65vw;*/
+      flex-grow: 1;
+  }
+.nav-link {
+    display: flex;
+    justify-content: space-between;
+    width: 29.57vw;
+    font-size: 25px;
+
+}
+.nav-link a:hover {
+    border-bottom: 1px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;}
+
+.nav-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*margin-right: 6.41vw;*/
+    /*margin-left: 18.33vw;*/
+    /*flex-grow: 1;*/
+}
+
+.nav-icon svg {
+    margin-left: 2.78vw;
+}
+
+/*slider*/
+
+.scroll_points {
+    position: absolute;
+    top: 230px;
+    right: 6.41vw;
+}
+
+.scroll_points svg {
+    margin-left: 1.58vw;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 900;
+}
+ .slider {
+     height: 75vh;
+     width: 50vw;
+     margin-top: 142px;
+ }
+
+ .slider p {
+     line-height: 20px;
+ }
+
+ .slider img {
+     position: absolute;
+     top: 192px;
+     right: 210px;
+     width: 47vw;
+
+ }
+
+ .button_orange.button_catalog {
+     width: 21vw;
+     font-size: 20px;
+     padding: 22px 56px 22px 56px;
+     margin-top: 90px;
+
+ }
+
+/*main*/
+
+/*catalog*/
+
+
+div.catalog-card {
+    display: flex;
+    align-items: end;
+
+}
+#catalog h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+section.catalog-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 21vw;
+    height: 539px;
+    background-color: white;
+    box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
+    border-radius: 20px;
+    margin-left: 1%;
+    margin-top: 83px;
+}
+
+.teapot {
+    position: relative;
+    bottom: 10%;
+}
+
+.button_orange.catalog-card {
+    width: 82%;
+    height: 11%;
+    font-size: 20px;
+    padding: 4% 23% 4% 23%;
+    margin-bottom: 12%;
+    line-height: 30px;
+
+}
+
+/*sale*/
+section.sale{
+   margin-top: 90px;
+}
+
+.sale h2, .sale p {
+    text-align: right;
+}
+
+div.sale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: scale(0.9, 0.9);
+    margin-left: 5vw;
+}
+p.black_link {
+    margin-right: 5vw;
+}
+
+/*why us*/
+section.why_us {
+    margin-top: 117px;
+
+    display: flex;
+
+}
+
+section.why_us div.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+div.right ul {
+    list-style-type: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+li h3 {
+    font-size: 25px;
+    margin-top: 0;
+}
+
+li p {
+    font-size: 20px;
+}
+
+
+div.list {
+    display: flex;
+
+
+}
+
+div.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 2.63vw;
+}
+
+div.list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*how we are doing our coffee*/
+
+article.how_we_do_coffee {
+    height: 70vh;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: white;
+}
+
+/*news*/
+
+/*instagram*/
+
+/*subscribe*/
+
+/*footer*/

@@ -6,73 +6,47 @@
     <!--    ссылка на макет в фигме https://www.figma.com/file/eNqducvk6OQwmXoz7hVHQu/ -->
     <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/font/Gilroy/Gilroy.css">
-    <style>
-        body {
-            font-family: 'Gilroy', Helvetica, sans-serif;
-        }
-        body { background-image: url("assets/img/svg/BG_orange1.svg"), url("assets/img/svg/BG_orange2.svg"), url("assets/img/bg_photo_light_yellow.png"), url("assets/img/svg/BG_orange+yellow.svg");
-            background-position: top right, left top 1500px, top 2766px center, top 4921px center;
-            background-repeat: no-repeat;
-        }
-
-        .bold {
-            font-weight: bolder;
-        }
-        .nav-link {
-            text-decoration: none;
-            color: black;
-        }
-        .black_link {
-            color: black;
-        }
-        .orange_link {
-            color: #F9B300;
-        }
-        .button_orange {
-            background-color: #F9B300;
-            color: white; text-decoration: none;
-            padding: 10px;
-        }
-        .button_catalog {
-            box-sizing: border-box;
-            width: 20vw;
-        }
-        .nav-link:hover {
-            border-bottom: 1px solid black;
-        }
-
-    </style>
+    <link rel="stylesheet" href="assets/styles/styles.css">
 
 </head>
 <body>
 
 <header>
-    <nav>
-        <a class="logo" href=""><img src="assets/img/logo.png" alt="логотип сайта" /></a>
-        <a class="nav-link" href="">Каталог товаров</a>
-        <a class="nav-link" href="">Блог</a>
-        <a class="nav-link" href=""> Контакты</a>
+    <div class="top">
+        <a class="logo" href="#">
+            <img src="assets/img/logo.png" alt="логотип сайта" />
+        </a>
 
+        <nav>
 
-        <a  class="nav-link" href="">
-            <svg width="36" height="12" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="nav-link">
+            <a  href="#catalog">Каталог товаров</a>
+            <a  href="#">Блог</a>
+            <a  href="#"> Контакты</a>
+        </div>
+
+        <div class="nav-icon">
+            <a   href="#">
+            <svg width="1.68vw" height="32" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M34 33L26.2667 25.5083M30.4444 15.7778C30.4444 23.387 24.0769 29.5556 16.2222 29.5556C8.36751 29.5556 2 23.387 2 15.7778C2 8.16852 8.36751 2 16.2222 2C24.0769 2 30.4444 8.16852 30.4444 15.7778Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-        </a>
+            </a>
 
-        <a  class="nav-link" href="">
-            <svg width="37" height="12" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a   href="#">
+            <svg width="1.73vw" height="33" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 2H8L12.02 21.7662C12.1572 22.4458 12.5329 23.0563 13.0813 23.4908C13.6298 23.9253 14.316 24.1561 15.02 24.1429H29.6C30.304 24.1561 30.9902 23.9253 31.5387 23.4908C32.0871 23.0563 32.4628 22.4458 32.6 21.7662L35 9.38095H9.5M15.5 31.5238C15.5 32.3391 14.8284 33 14 33C13.1716 33 12.5 32.3391 12.5 31.5238C12.5 30.7085 13.1716 30.0476 14 30.0476C14.8284 30.0476 15.5 30.7085 15.5 31.5238ZM32 31.5238C32 32.3391 31.3284 33 30.5 33C29.6716 33 29 32.3391 29 31.5238C29 30.7085 29.6716 30.0476 30.5 30.0476C31.3284 30.0476 32 30.7085 32 31.5238Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-        </a>
+            </a>
 
-        <a  class="nav-link" href="">
-            <svg width="33" height="12" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a   href="#">
+            <svg width="1.52vw" height="36" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M31 34V30.4444C31 28.5585 30.2362 26.7497 28.8765 25.4161C27.5169 24.0825 25.6728 23.3333 23.75 23.3333H9.25C7.32718 23.3333 5.48311 24.0825 4.12348 25.4161C2.76384 26.7497 2 28.5585 2 30.4444V34M23.75 9.11111C23.75 13.0385 20.5041 16.2222 16.5 16.2222C12.4959 16.2222 9.25 13.0385 9.25 9.11111C9.25 5.18375 12.4959 2 16.5 2C20.5041 2 23.75 5.18375 23.75 9.11111Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-        </a>
-    </nav>
-        <div>
+            </a>
+        </div>
+        </nav>
+    </div>
+    <div class="scroll_points">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="10" cy="10" r="10" fill="#40241D"/>
         </svg>
@@ -82,14 +56,15 @@
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="10" cy="10" r="10" fill="white"/>
         </svg>
-        </div>
+    </div>
+    <section class="slider">
 
-    <section>
     <h1>Свежеобжаренный кофе</h1>
-    <p>Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом.</p>
+    <p>Кофе Калининградской обжарки из разных стран <br> произрастания с доставкой на дом.</p>
     <p>Мы обжариваем кофе <span class="bold">каждые выходные.</span></p>
         <img src="assets/img/coffe_beans_and_cup_top.png" alt="чашка кофе вид сверху вокруг зерна">
-    <div class="button_catalog"><a class="button_orange" href="#catalog" >Посмотреть каталог</a></div>
+        <a class="button_orange button_catalog" href="#catalog" >Посмотреть каталог</a>
+
     </section>
 </header>
 
@@ -97,89 +72,110 @@
 
     <article id="catalog">
         <h2>Каталоги нашей продукции</h2>
+        <div class="catalog-card ">
         <section class="catalog-card">
             <img src="assets/img/kisspng-jamaican-blue-mountain-coffee-cafe-chocolate-cover-coffee-stain-5b161a3dc7a4d2%201.png" alt="Обжаренные кофейные зёрна">
             <h3>Свежеобжаренный кофе</h3>
         </section>
-        <section>
-            <img src="assets/img/kisspng-teapot-glass-kettle-coffee-glass-teapot-5b2b7b48412cb5%201.png" alt="стеклянный чайник с чаем">
+        <section class="catalog-card">
+            <img class="teapot" src="assets/img/kisspng-teapot-glass-kettle-coffee-glass-teapot-5b2b7b48412cb5%201.png" alt="стеклянный чайник с чаем">
             <h3>Чай и кофейные напитки</h3>
-            <a class="button_orange" href="">Купить</a>
+            <a class="button_orange catalog-card" href="#">Купить</a>
         </section>
-        <section>
-            <img src="assets/img/kisspng-latte-macchiato-espresso-coffee-cappuccino-jura-giga-5-aluminium-kavos-inovai-5bf2913b055f41%201.png" alt="кофемашина с двумя стаканами кофе">
+        <section class="catalog-card">
+            <img  src="assets/img/kisspng-latte-macchiato-espresso-coffee-cappuccino-jura-giga-5-aluminium-kavos-inovai-5bf2913b055f41%201.png" alt="кофемашина с двумя стаканами кофе">
             <h3>Продукция для вендинга</h3>
         </section>
-        <section>
+        <section class="catalog-card">
             <img src="assets/img/porrige.png" alt="тарелка с кашей">
             <h3>Здоровое питание</h3>
         </section>
-
+        </div>
     </article>
 
-    <section>
+    <section class="sale">
         <h2>Товары со скидкой</h2>
-        <p>Наша компания предлагает покупать товар со скидкой не только в дни распродаж
+        <p>Наша компания предлагает покупать товар со скидкой не только в дни распродаж <br>
             или в течение действия ограниченных предложений, но и пользоваться скидками постоянно!</p>
-        <a href=""><svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+        <div class="sale">
+        <a href="#"><svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="35" cy="35" r="35" transform="rotate(-180 35 35)" fill="#F9B300"/>
             <path d="M21.2929 33.2929C20.9024 33.6834 20.9024 34.3166 21.2929 34.7071L27.6569 41.0711C28.0474 41.4616 28.6805 41.4616 29.0711 41.0711C29.4616 40.6805 29.4616 40.0474 29.0711 39.6569L23.4142 34L29.0711 28.3431C29.4616 27.9526 29.4616 27.3195 29.0711 26.9289C28.6805 26.5384 28.0474 26.5384 27.6569 26.9289L21.2929 33.2929ZM48 33L22 33L22 35L48 35L48 33Z" fill="white"/>
         </svg></a>
-        <a href=""><img src="assets/img/card_coffee_shop.png" alt="карточка товара"></a>
-        <a href=""><img src="assets/img/card_coffee_shop.png" alt="карточка товара"></a>
-        <a href=""><img src="assets/img/card_coffee_shop.png" alt="карточка товара"></a>
-        <a href=""><svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a href="#"><img src="assets/img/card_coffee_shop.png" alt="карточка товара"></a>
+        <a href="#"><img src="assets/img/card_coffee_shop.png" alt="карточка товара"></a>
+        <a href="#"><img src="assets/img/card_coffee_shop.png" alt="карточка товара"></a>
+        <a href="#"><svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="35" cy="35" r="35" fill="#F9B300"/>
             <path d="M48.7071 36.7071C49.0976 36.3166 49.0976 35.6834 48.7071 35.2929L42.3431 28.9289C41.9526 28.5384 41.3195 28.5384 40.9289 28.9289C40.5384 29.3195 40.5384 29.9526 40.9289 30.3431L46.5858 36L40.9289 41.6569C40.5384 42.0474 40.5384 42.6805 40.9289 43.0711C41.3195 43.4616 41.9526 43.4616 42.3431 43.0711L48.7071 36.7071ZM22 37L48 37L48 35L22 35L22 37Z" fill="white"/>
         </svg></a>
-        <p><a class="black_link" href="">Смотреть все</a></p>
+        </div>
+        <p class="black_link"><a class="black_link" href="#">Смотреть все</a></p>
     </section>
 
-    <section>
-        <h2>Почему стоит работать именно с нами?</h2>
+    <section class="why_us">
+        <div class="left">
         <img src="assets/img/coffe_beans_and_cup.png" alt="чашка кофе с рассыпаными зернами">
+        </div>
 
-        <ul style="list-style-type: none">
-            <li><h3>Всегда свежая обжарка</h3>
+        <div class="right">
+            <h2>Почему стоит работать <br> именно с нами?</h2>
+            <div class="list">
+
+                <div class="icons">
                 <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="42" cy="42" r="42" fill="#F9B300"/>
                     <path d="M51.619 37.5H53.0952C54.6613 37.5 56.1632 38.1321 57.2705 39.2574C58.3779 40.3826 59 41.9087 59 43.5C59 45.0913 58.3779 46.6174 57.2705 47.7426C56.1632 48.8679 54.6613 49.5 53.0952 49.5H51.619M51.619 37.5H28V51C28 52.5913 28.6221 54.1174 29.7295 55.2426C30.8368 56.3679 32.3387 57 33.9048 57H45.7143C47.2803 57 48.7822 56.3679 49.8896 55.2426C50.9969 54.1174 51.619 52.5913 51.619 51V37.5ZM33.9048 27V31.5M39.8095 27V31.5M45.7143 27V31.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <p>Подбор степени обжарки под каждый сорт кофе. Всегда свежая обжарка</p></li>
-            <li><h3>Лучшие цены на продукцию</h3>
                 <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="42" cy="42" r="42" fill="#F9B300"/>
                     <path d="M34.0849 35.087H34.1011M56.0596 45.4545L44.4659 57.0513C44.1655 57.352 43.8089 57.5906 43.4163 57.7534C43.0237 57.9162 42.6028 58 42.1778 58C41.7529 58 41.332 57.9162 40.9394 57.7534C40.5468 57.5906 40.1902 57.352 39.8898 57.0513L26 43.174V27H42.1698L56.0596 40.8935C56.6619 41.4995 57 42.3194 57 43.174C57 44.0286 56.6619 44.8484 56.0596 45.4545Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <p>Благодаря крупным объемам производства мы даем лучшие цены на нашу продукцию</p></li>
-            <li><h3>Консультации 24/7</h3>
                 <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="42" cy="42" r="42" fill="#F9B300"/>
                     <path d="M49.5455 57V53.6667C49.5455 51.8986 48.8558 50.2029 47.6283 48.9526C46.4008 47.7024 44.736 47 43 47H31.5455C29.8095 47 28.1446 47.7024 26.9171 48.9526C25.6896 50.2029 25 51.8986 25 53.6667V57M51.1818 40.3333L54.4545 43.6667L61 37M43.8182 33.6667C43.8182 37.3486 40.8877 40.3333 37.2727 40.3333C33.6578 40.3333 30.7273 37.3486 30.7273 33.6667C30.7273 29.9848 33.6578 27 37.2727 27C40.8877 27 43.8182 29.9848 43.8182 33.6667Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <p>Наши специалисты готовы всегда помочь
-                и подсказать вам с выбором кофе или другой продукции.</p></li>
-        </ul>
+                </div>
+
+
+                <ul>
+                <li><h3>Всегда свежая обжарка</h3>
+
+                <p>Подбор степени обжарки под каждый <br> сорт кофе. Всегда свежая обжарка</p></li>
+                <li><h3>Лучшие цены на продукцию</h3>
+
+                <p>Благодаря крупным объемам производства <br> мы даем лучшие цены на нашу продукцию </p></li>
+                <li><h3>Консультации 24/7</h3>
+
+                <p>Наши специалисты готовы всегда помочь <br>
+                и подсказать вам с выбором кофе или <br> другой продукции.</p></li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <article>
+    <article class="how_we_do_coffee">
         <h2>Как мы обжариваем наш кофе:</h2>
-        <p>Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство
-            в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы
+        <p>Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой склад и представительство <br>
+            в Москве. Завод работает на рынке свежеобжаренного кофе и растворимой продукции более 15 лет. <br>Завод имеет немецкое оборудование марки Probat по обжарке кофе и итальянские агломераторы
+            <br>
             для производства растворимой продукции.</p>
 
-        <p>Кофе поставляется в контейнерах напрямую с плантаций по всему миру. Компания имеет долгосрочные контракты по поставке продукции. Каждая партия проходит строгий контроль на заводе для проверки зерна. Зеленое зерно обжаривается, проходит процесс дегазации и тут же отправляется клиентам. Наши обжарщики прошли обучение в России и за рубежом.
+        <p>Кофе поставляется в контейнерах напрямую с плантаций по всему миру. Компания имеет долгосрочные <br> контракты по поставке продукции. Каждая партия проходит строгий контроль на заводе для проверки
+            <br> зерна. Зеленое зерно обжаривается, проходит процесс дегазации и тут же отправляется клиентам. <br> Наши обжарщики прошли обучение в России и за рубежом.
+            <br>
             У нас свой подход к каждой партии зерна.</p>
 
         <p>Мы раскрываем вкус каждого сорта кофе.</p>
 
-        <div class="button_catalog"><a class="button_orange" href="">Перейти в каталог</a></div>
+        <div class="button_catalog"><a class="button_orange" href="#">Перейти в каталог</a></div>
 
     </article>
 
     <section>
         <h2>Новости компании</h2>
-        <a class="black_link" href="">Читать все</a>
+        <a class="black_link" href="#">Читать все</a>
 
         <article>
             <img src="assets/img/lion_tanzania.png" alt="пачка кофе со львом на этикетке">
@@ -187,19 +183,19 @@
             <p>Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.</p>
 
             <p>Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
-            <a class="orange_link" href="">Подробнее &rarr;</a>
+            <a class="orange_link" href="#">Подробнее &rarr;</a>
         </article>
 
         <article>
             <h3>Африканский кофе Кения АА</h3>
             <p>Кения АА – у этого кофе, из африканской страны, репутация одного из самых вкусных и ярких сортов в мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.</p>
-            <a class="orange_link" href="">Подробнее &rarr;</a>
+            <a class="orange_link" href="#">Подробнее &rarr;</a>
         </article>
 
         <article>
             <h3>Африканский кофе Кения АА</h3>
             <p>Кения АА – у этого кофе, из африканской страны, репутация одного из самых вкусных и ярких сортов в мире. Многие обжарщики высоко оценивают местные разновидности высокогорной арабики.</p>
-            <a class="orange_link" href="">Подробнее &rarr;</a>
+            <a class="orange_link" href="#">Подробнее &rarr;</a>
         </article>
 
         <article>
@@ -208,7 +204,7 @@
             <p>Танзания – красивая африканская страна. Именно здесь расположены легендарные географические объекты – вулкан Килиманджаро и озеро Виктория.</p>
 
             <p>Но наш интерес вызван не столько природными красотами, сколько кофе...</p>
-            <a class="orange_link" href="">Подробнее &rarr;</a>
+            <a class="orange_link" href="#">Подробнее &rarr;</a>
         </article>
 
     </section>
@@ -234,10 +230,10 @@
 </main>
 
 <footer>
-    <a class="logo" href=""><img src="assets/img/logo.png" alt="логотип сайта" /></a>
-    <a class="nav-link" href="">Каталог товаров</a>
-    <a class="nav-link" href="">Блог</a>
-    <a class="nav-link" href=""> Контакты</a>
+    <a class="logo" href="#"><img src="assets/img/logo.png" alt="логотип сайта" /></a>
+    <a class="nav-link" href="#">Каталог товаров</a>
+    <a class="nav-link" href="#">Блог</a>
+    <a class="nav-link" href="#"> Контакты</a>
 </footer>
 
 </body>
