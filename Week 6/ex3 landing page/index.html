@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hiking Guide</title>
+    <title>MNTN</title>
 <!--  figma — https://www.figma.com/community/file/788675347108478517 -->
 
   <link href="http://fonts.cdnfonts.com/css/chronicle-display" rel="stylesheet">
@@ -15,14 +15,16 @@
 
   <header>
     <div class="top">
-      <div class="logo">MNTN</div>
+      <div class="logo">
+        <a class="link_white" href="#">MNTN</a>
+      </div>
       <nav>
-        <a href="#">Equipment</a>
-        <a href="#">About us</a>
-        <a href="#">Blog</a>
+        <a class="link_white" href="#">Equipment</a>
+        <a class="link_white" href="#">About us</a>
+        <a class="link_white" href="#">Blog</a>
       </nav>
       <div class="account">
-        <a href="#">
+        <a class="link_white" href="#">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z" fill="white"/>
             <mask id="mask0_1_50" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="20">
@@ -31,63 +33,74 @@
             <g mask="url(#mask0_1_50)">
             </g>
           </svg>
+
           Account
         </a>
       </div>
     </div>
-    <section class="social">
-      Follow us
+
+    <div class="social">
+      <p>Follow us</p>
+      <a class="link_white" href="#">
       <object type="image/svg+xml" data="assets/img/svg/instagram.svg"></object>
-      <object data="./assets/img/svg/twitter.svg" type="image/svg+xml"></object>
-    </section>
+      </a>
+      <a class="link_white" href="#"><object data="./assets/img/svg/twitter.svg" type="image/svg+xml"></object>
+      </a>
+    </div>
     <section class="content">
-      <h1 class="headline">
+      <h1 id="start" class="headline">
         <svg width="72" height="2" viewBox="0 0 72 2" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="72" height="2" fill="#FBD784"/>
         </svg>
         A HIKING GUIDE
       </h1>
-      <h3>Be prepared for the Mountains and beyond!</h3>
-      <p>scroll down добавить стрелочку</p>
+      <h3>Be Prepared For The Mountains And Beyond!</h3>
+      <a class="link_white" href="#tips_01">scroll down &#8595;</a>
     </section>
-    <section class="slider">
-      <div class="nav_page">
-        <a href="#">Start</a>
-        <a href="#">01</a>
-        <a href="#">02</a>
-        <a href="#">03</a>
-      </div>
-      <object data="./assets/img/svg/Slider%20BG.svg" type="image/svg+xml"></object>
-    </section>
-  </header>
+    <div class="slider">
+        <div><a href="#start">Start</a></div>
+        <div><a href="#tips_01">01</a></div>
+        <div><a href="#tips_02">02</a></div>
+        <div><a href="#tips_03">03</a></div>
 
+    </div>
+  </header>
   <main>
-    <section class="tips_01">
-      <div class="tips_number">01</div>
-      <h2>GET STARTED</h2>
+    <section class="tips">
+      <div id="tips_01" class="tips_number">01</div>
+      <h2 class="headline">
+        <svg width="72" height="2" viewBox="0 0 72 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="72" height="2" fill="#FBD784"/>
+        </svg>GET STARTED</h2>
       <h3>What level of hiker are you?</h3>
       <p>Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?</p>
-      <a href="#">read more &rAarr;</a>
+      <a href="#">read more &#8594;</a>
       <img src="./assets/img/01.jpg" alt="hiker on a mountain road">
 
     </section>
 
-    <section class="tips_02">
-      <div class="tips_number">02</div>
-      <h2>HIKING ESSENTIAL</h2>
+    <section class="tips">
+      <div id="tips_02" class="tips_number">02</div>
+      <h2 class="headline">
+        <svg width="72" height="2" viewBox="0 0 72 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="72" height="2" fill="#FBD784"/>
+        </svg>HIKING ESSENTIAL</h2>
       <h3>Picking the right Hiking Gear!</h3>
       <p>The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have. Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.</p>
-      <a href="#">read more &rAarr;</a>
-      <img src="./assets/img/02.jpg" alt="hiker looking out at the mountains">
+      <a href="#">read more &#8594;</a>
+      <img class="left_img" src="./assets/img/02.jpg" alt="hiker looking out at the mountains">
 
     </section>
 
-    <section class="tips_03">
-      <div class="tips_number">03</div>
-      <h2>WHERE YOU GO IS THE KEY</h2>
+    <section class="tips">
+      <div id="tips_03" class="tips_number">03</div>
+      <h2 class="headline">
+        <svg width="72" height="2" viewBox="0 0 72 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="72" height="2" fill="#FBD784"/>
+        </svg>WHERE YOU GO IS THE KEY</h2>
       <h3>Understand Your Map & Timing</h3>
       <p>To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction..</p>
-      <a href="#">read more &rAarr;</a>
+      <a href="#">read more &#8594;</a>
       <img src="./assets/img/03.jpg" alt="hand holds the compass">
 
     </section>
@@ -96,24 +109,26 @@
 
   <footer>
     <div>
-      <div class="logo">MNTN</div>
-      <div class="slogan">Get out there &amp; discover your next slope, mountain &amp; destination!</div>
+      <div class="logo">
+        <a class="link_white" href="#">MNTN</a>
+      </div>
+      <div class="slogan">Get out there &amp; discover your next <br> slope, mountain &amp; destination!</div>
       <div class="copyright">Copyright 2019 MNTN, Inc. Terms &amp; Privacy</div>
     </div>
     <section class="links">
       <h4>More on The Blog</h4>
-      <a href="#">About MNTN</a>
-      <a href="#">Contributors &amp; Writers</a>
-      <a href="#">Write For Us</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Privacy Policy</a>
+      <a class="link_white" href="#">About MNTN</a>
+      <a class="link_white" href="#">Contributors &amp; Writers</a>
+      <a class="link_white" href="#">Write For Us</a>
+      <a class="link_white" href="#">Contact Us</a>
+      <a class="link_white" href="#">Privacy Policy</a>
     </section>
 
     <section class="links">
       <h4>More on MNTN</h4>
-      <a href="#">The Team</a>
-      <a href="#">Jobs</a>
-      <a href="#">Press</a>
+      <a class="link_white" href="#">The Team</a>
+      <a class="link_white" href="#">Jobs</a>
+      <a class="link_white" href="#">Press</a>
     </section>
 
   </footer>
